@@ -17,7 +17,7 @@
 		<nav class="main-nav">
 			<ul>
 				<li><a href="Schedule.html">РАСПИСАНИЕ</a></li>
-				<li class="active"><a href="#">ИНСТРУКТОРЫ</a></li>
+				<li><a href="#" class="active">ИНСТРУКТОРЫ</a></li>
 				<li><a href="#">СТОИМОСТЬ</a></li>
 				<li><a href="#">КАК ДОБРАТЬСЯ</a></li>
 			</ul>
@@ -27,27 +27,30 @@
 	</header>
 	<main>
 		<h1 class="page-title">Инструкторы школы</h1>
-		<input class="search" type="search" id="mysearch" placeholder="Начните вводить имя"> 
+		<div class="search-line">
+			<input class="search" type="search" id="mysearch" placeholder="Начните вводить имя"> 
+			<a href="#"><img class="lupa" src="img/search-lupa.png" alt="submit"></a>
+		</div>
 
 <!-- Instructors -->
 
 		<section class="instructors">
 			<a href="#" class="instructors-item">
-				<img src="img/arseny-photo.png" alt="Арсений Петров" class="instructors-photo">
+				<img src="img/arseny-photo.png" alt="Арсений Петров">
 				<span class="instructors-name">Арсений<br>Петров</span>
 			</a>
 			<a href="#" class="instructors-item">
-				<img src="img/instr-photo2.png" alt="" class="instructors-photo">
+				<img src="img/instr-photo2.png" alt="">
 			</a>
 			<a href="#" class="instructors-item">
-				<img src="img/stepan-instr-photo3.png" alt="Степан Александров" class="instructors-photo">
+				<img src="img/stepan-instr-photo3.png" alt="Степан Александров">
 				<span class="instructors-name">Степан<br>Александров</span>
 			</a>
-			<a href="#" class="instructors-item">
-				<img src="img/konst-instr-photo4.png" alt="" class="instructors-photo-active">
+			<a href="#" class="instructors-item instructors-item-active">
+				<img src="img/konst-instr-photo4.png" alt="Константин">
 			</a>
 			<a href="#" class="instructors-item">
-				<img src="img/vit-instr-photo5.png" alt="Виталий Сергеев" class="instructors-photo">
+				<img src="img/vit-instr-photo5.png" alt="Виталий Сергеев">
 				<span class="instructors-name">Виталий<br>Сергеев</span>
 			</a>
 			<div class="clear"></div>
@@ -79,7 +82,6 @@
 					<span>Стиль</span>
 					<p>#allround<br>#freeride<br>#skiicross</p>
 				</div>
-				<!-- <div class="clear"></div> -->
 			</div>
 			<div class="clear"></div>
 		</section>

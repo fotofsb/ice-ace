@@ -1,7 +1,25 @@
-h1 {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 40px;
+@font-face {
+	font-family: "Futura PT";
+	src: url(../font/Futura PT.woff2) format("woff2"),
+	url(../font/Futura PT.woff) format("woff"),
+	url(../font/Futura PT.ttf) format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Futura PT";
+	src: url(../font/Futura PT.woff2) format("woff2"),
+	url(../font/Futura PT.woff) format("woff"),
+	url(../font/Futura PT.ttf) format("truetype");
 	font-style: bold;
+	font-weight: 800;
+}
+
+h1 {
+	font-family: 'Futura PT', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -19,6 +37,7 @@ body {
 	margin: 0 auto;
 }
 
+
 /*Promo*/
 
 .promo {
@@ -26,11 +45,12 @@ body {
 	background-repeat: no-repeat;
 	min-width: 1280px;
 	min-height: 645px;
-	margin: 0 auto;
+	margin: auto;
 
 }
 
 .promo-title {
+	font-family: 'Futura PT', sans-serif;
 	color: #fff;
 	text-align: left;
 	padding-top: 100px;
@@ -41,6 +61,7 @@ body {
 }
 
 .promo-title span {
+	font-family: 'Futura PT', sans-serif;
 	font-size: 30px;
 }
 
@@ -65,16 +86,27 @@ body {
 	float: left;
 }
 
-ul li {
+.main-nav ul li {
 	list-style: none;
 	vertical-align: top;
 	display: inline-block;
 	padding: 10px 40px 0px 0px;
 }
 
-li a {
+.main-nav li a {
 	color: #000;
 	text-decoration: none;
+	transition: 3s linear color;
+}
+
+.main-nav li a:hover {
+ 	border-bottom: 3px solid #7be99e;
+	padding-bottom: 5px;
+}
+
+.active {
+	border-bottom: 3px solid #7be99e;
+	padding-bottom: 5px;
 }
 
 .page-header-phone {
@@ -93,7 +125,15 @@ li a {
   	display: inline-block;
   	text-decoration: none;
   	font-size: 15px;
+
 }
+
+.btn:hover {
+	transition:all 0.5s;
+  	background-color: #7BE99E;
+	color: #fff;
+}
+
 
 /*service*/
 
@@ -101,11 +141,13 @@ li a {
 	margin: 35px 40px;
 }
 .section-title {
+	font-family: 'Futura PT', sans-serif;
 	font-size: 40px;
 	font-weight: bold;
 	text-align: center;
 }
 .sub-title {
+	font-family: 'Futura PT', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
@@ -117,14 +159,17 @@ li a {
 	width: 360px;
 	height: 245px;
 	margin: 20px 20px;
+	line-height: 1.5;
 	display: inline-block;
 	float: left;
 	position: relative;
 }
 .service-text {
+	font-family: 'Futura PT', sans-serif;
 	font-size: 15px;
 }
 .service-subtext {
+	font-family: 'Futura PT', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	float: left;
@@ -134,6 +179,11 @@ li a {
 }
 .service-item > h3 {
 	margin: 0;
+}
+
+.service-item a:hover {
+	transition: 0.5s;
+	opacity: 0.8;
 }
 .service-footer {
 	position: absolute;
@@ -152,15 +202,19 @@ li a {
 	display: inline-block;
 }
 .features-item {
+	font-family: 'Futura PT', sans-serif;
 	width: 360px;
 	height: 245px;
 	margin: 20px 20px;
+	line-height: 1.5;
 	display: inline-block;
 	float: left;
 }
 .features-item h3 {
+	font-family: 'Futura PT', sans-serif;
 	text-align: center;
 }
+
 
 .icon-holder {
 	height: 60px;
@@ -175,12 +229,14 @@ li a {
 
 .offer {
 	background-image: url(../img/bcg-sale.png);
-	width: 1280px;
-	height: 345px;
+	background-repeat: no-repeat;
+	min-width: 1280px;
+	min-height: 345px;
 	margin: 0 auto;
 	padding-top: 20px;
 }
 .title-white {
+	font-family: 'Futura PT', sans-serif;
 	color: #fff;
 }
 .offer-wrap {
@@ -188,8 +244,10 @@ li a {
 	text-align: center;
 }
 .offer-item {
+	font-family: 'Futura PT', sans-serif;
 	width: 386px;
 	margin: 20px 20px;
+	line-height: 1.5;
 	display: inline-block;
 	float: left;
 }
@@ -226,11 +284,13 @@ li a {
 }
 
 .team-info {
+	font-family: 'Futura PT', sans-serif;
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	padding: 0 100px;
+	line-height: 1.5;
 }
 
 .team-info p {
@@ -238,6 +298,7 @@ li a {
 }
 
 .btn-team {
+	font-family: 'Futura PT', sans-serif;
 	color: #39cf68;
   	width: 200px;
   	height: 20px;
@@ -246,9 +307,14 @@ li a {
   	border: 2px solid #000;
   	display: inline-block;
   	text-decoration: none;
-  	font-size: 15px;	
+  	font-size: 15px;
+  	transition:all 0.5s;
 }
 
+.btn-team:hover{
+  	background-color: #7BE99E;
+	color: #fff;
+}
 
 /*community*/
 
@@ -258,8 +324,10 @@ li a {
 	margin: 0 auto;
 }
 .community-wrap {
+	font-family: 'Futura PT', sans-serif;
 	display: inline-block;
 	text-align: center;
+	line-height: 1.5;
 	font-size: 15px;
 	margin: 20px 250px;
 }
@@ -279,15 +347,11 @@ li a {
 }
 .instagram-item {
 	display: inline-block;
-
-
 }
 
 .instagram-item img {
 	height: 180px;
 	margin: 5px 5px;
-
-
 }
 .instagram h2 a {
 	text-decoration: none;
@@ -324,8 +388,7 @@ li a {
 	text-align: right;
 	padding: 65px 45px 0px 0px;
 
-} 
-
+}
 
 .phone-link {
 	color: #000;
@@ -362,25 +425,31 @@ li a {
 	padding: 50px 0px 0px 50px;
 }
 
-ul li {
+.page-footer ul li {
 	list-style: none;
 	vertical-align: top;
 	display: inline-block;
 	padding: 10px 40px 0px 0px;
 }
 
-li a {
+.page-footer li a {
 	color: #000;
 	text-decoration: none;
 }
 
+
+.page-footer a:hover {
+	transition: 0.5s;
+	opacity: 0.8;
+}
+
 /*instructors*/
 
+.search-line {
+	position: relative;
+}
+
 .search {
-	background-image: url(../img/search-lupa.png);
-	background-repeat: no-repeat; 
-	background-size: 20px 20px;
-	background-position: 98%;
 	box-shadow: 0 0 2px 2px #A9A9A9;
 	width: 640px;
 	height: 40px;
@@ -391,6 +460,14 @@ li a {
 	margin-bottom: 40px;
 }
 
+.lupa {
+	position: absolute;
+	right: 300px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+}
+
 .instructors {
 	width: 1160px;
 	margin: 0 auto;
@@ -399,6 +476,11 @@ li a {
 .instructors-item {
 	position: relative;
 	float: left;
+	transition: all 1s ease;
+}
+
+.instructors-item:hover {
+	opacity: 0.8;
 }
 
 .instructors-name {
@@ -408,7 +490,12 @@ li a {
 	color: #fff;
 }
 
+.instructors-item-active {
+	opacity: 1.6;
+}
+
 /*instructor-profile*/
+
 .clear {
 	clear: both;
 }
@@ -491,11 +578,13 @@ li a {
 	padding-right: 40px;
 }
 
+
 .education-video {
 	float: right;
 	width: 500px; 
 	height: 279px;
 }
+
 
 /*review*/
 
@@ -503,7 +592,7 @@ li a {
 	background-image: url(../img/Snowboard-Wallpaper-Nicolas-Muller-Laax-1920x1080.png);
 	background-repeat: no-repeat; 
 	width: 920px;
-	height: 105px;
+	height: 110px;
 	padding: 40px;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -512,6 +601,7 @@ li a {
 .review p {
 	margin-right: 200px;
 	font-size: 15px;
+	line-height: 20px;
 }
 
 .review span {
@@ -528,11 +618,17 @@ li a {
 	margin-bottom: 40px;
 }
 
+
 .instructors-item-footer {
 	position: relative;
 	float: left;
 	width: 232px;
 	height: 232px;
+}
+
+.instructors-item-footer:hover {
+	transition: .5s;
+	opacity: 0.8;
 }
 
 .instructors-name-footer {
@@ -545,5 +641,187 @@ li a {
 /*Schedule*/
 
 .schedule {
+	padding: 20px 60px;
 
+}
+
+.schedule-table {
+	border-collapse: collapse;
+	min-width: 100%;
+}
+
+.schedule-table th, .schedule-table td {
+	border: 2px solid #000;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.schedule-table th {
+	border: none;
+	text-align: left;
+	padding: 10px 0;
+}
+
+.btn-borderless {
+	color: #7BE99E;
+  	width: 100px;
+  	padding: 10px;
+  	font-weight: bold;
+  	display: inline-block;
+  	text-decoration: none;
+  	font-size: 15px;	
+}
+
+.schedule-table tbody tr td:last-child {
+	text-align: center;
+	padding: 0;
+}
+
+/*subscription*/
+
+.subscription {
+	border: 2px solid #000;
+	margin: 10px 58px;
+}
+
+.subscription-img {
+	float: left;
+	width: 320px;
+}
+
+.subscription-img img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.subscription-info {
+	margin-left: 320px;
+	margin-right: 220px;
+	padding: 20px 80px 50px 30px;
+}
+
+.subscription-info span {
+	font-weight: bold;
+}
+.subscription-info a {
+	color: #000;
+	text-decoration: none;
+}
+
+.subscription-info p {
+	line-height: 22px;
+}
+
+.subscription-btn {
+	float: right;
+	width: 120px;
+	padding: 50px;
+}
+
+.subscription-btn span{
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.subscription-btn a {
+	text-align: center;
+}
+
+/*pagination*/
+
+.pagination {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.pagination ul li {
+	list-style: none;
+	vertical-align: top;
+	display: inline-block;
+  	position: relative;
+  	margin: 1px;
+  	padding: 2px;
+}
+
+.pagination li a {
+	color: #000;
+	text-decoration: none;
+	transition: .5s ease-out;
+}
+
+.pagination span {
+	height: 12px;
+	width: 12px;
+	display: block;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 3px;
+	cursor: pointer;
+}
+
+.left {
+    border-left: 2px solid #7BE99E;
+    border-bottom: 2px solid #7BE99E;
+    left: -15px;
+}
+
+.right {
+   border-right: 2px solid #7BE99E;
+   border-top: 2px solid #7BE99E;
+   right: -15px;
+}
+
+.pagination a:hover {
+   opacity: 0.7;
+}
+
+.pagination a {
+	color: #000;
+	text-decoration: none;
+}
+
+
+/*form*/
+
+.form {
+	margin:  0 auto;
+  	max-width:  540px;
+}
+
+.form span {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-bottom: 30px;
+}
+
+.form-info {
+	margin-bottom: 40px;
+}
+
+
+.form input {
+	box-shadow: 0 0 2px 2px #A9A9A9;
+	width: 555px;
+	height: 45px;
+	font-size: 20px;
+	border: 1px solid #000;
+}
+
+textarea {
+	box-shadow: 0 0 2px 2px #A9A9A9;
+	width: 555px;
+	height: 120px;
+	font-size: 20px;
+	border: 1px solid #000;
+}
+
+.form a {
+	text-align: center;
+	margin-left: 230px;
+	margin-bottom: 40px;
 }

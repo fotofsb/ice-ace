@@ -16,7 +16,7 @@
 		<img src="img/logo.png" alt="logo_ice_ace"></a>
 		<nav class="main-nav">
 			<ul>
-				<li class="active"><a href="#">РАСПИСАНИЕ</a></li>
+				<li ><a href="#" class="active">РАСПИСАНИЕ</a></li>
 				<li><a href="instructors.html">ИНСТРУКТОРЫ</a></li>
 				<li><a href="#">СТОИМОСТЬ</a></li>
 				<li><a href="#">КАК ДОБРАТЬСЯ</a></li>
@@ -32,60 +32,131 @@
 
 <!-- schedule -->
 
-<section class="schedule">
-	<table>
-		<tr>
-			<td>Спорт</td>
-			<td>Инструктор</td>
-			<td>Дата</td>
-			<td>Время</td>
-			<td>Стоимость</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Сноуборд</td>
-			<td>Константин Константинопольский</td>
-			<td>30.03.2017</td>
-			<td>12:00</td>
-			<td>2000 руб.</td>
-			<td><a href="#">ЗАПИСАТЬСЯ</a></td>
-		</tr>
-		<tr>
-			<td>Сноуборд</td>
-			<td>Константин Константинопольский</td>
-			<td>01.04.2017</td>
-			<td>12:00</td>
-			<td>2000 руб.</td>
-			<td><a href="#">ЗАПИСАТЬСЯ</a></td>
-		</tr>
-		<tr>
-			<td>Лыжи</td>
-			<td>Степан Александров</td>
-			<td>01.04.2017</td>
-			<td>13:00</td>
-			<td>3000 руб.</td>
-			<td><a href="#">ЗАПИСАТЬСЯ</a></td>
-		</tr>
-		<tr>
-			<td>Лыжи</td>
-			<td>Виталий Сергеев</td>
-			<td>03.04.2017</td>
-			<td>14:00</td>
-			<td>4000 руб.</td>
-			<td><a href="#">ЗАПИСАТЬСЯ</a></td>
-		</tr>
-		<tr>
-			<td>Сноуборд</td>
-			<td>Арсений Петров</td>
-			<td>04.04.2017</td>
-			<td>14:00</td>
-			<td>4000 руб.</td>
-			<td><a href="#">ЗАПИСАТЬСЯ</a></td>
-		</tr>
-	</table>
-	
-</section>
+		<section class="schedule">
+			<table class="schedule-table">
+				<colgroup>
+					<col width="150">
+					<col>
+					<col width="150">
+					<col width="150">
+					<col width="150">
+					<col width="250">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Спорт</th>
+						<th>Инструктор</th>
+						<th>Дата</th>
+						<th>Время</th>
+						<th>Стоимость</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Сноуборд</td>
+						<td>Константин Константинопольский</td>
+						<td>30.03.2017</td>
+						<td>12:00</td>
+						<td>2000 руб.</td>
+						<td><a href="#" class="btn-borderless">ЗАПИСАТЬСЯ</a></td>
+					</tr>
+					<tr>
+						<td>Сноуборд</td>
+						<td>Константин Константинопольский</td>
+						<td>01.04.2017</td>
+						<td>12:00</td>
+						<td>2000 руб.</td>
+						<td><a href="#" class="btn-borderless">ЗАПИСАТЬСЯ</a></td>
+					</tr>
+					<tr>
+						<td>Лыжи</td>
+						<td>Степан Александров</td>
+						<td>01.04.2017</td>
+						<td>13:00</td>
+						<td>3000 руб.</td>
+						<td><a href="#" class="btn-borderless">ЗАПИСАТЬСЯ</a></td>
+					</tr>
+					<tr>
+						<td>Лыжи</td>
+						<td>Виталий Сергеев</td>
+						<td>03.04.2017</td>
+						<td>14:00</td>
+						<td>4000 руб.</td>
+						<td><a href="#" class="btn-borderless">ЗАПИСАТЬСЯ</a></td>
+					</tr>
+					<tr>
+						<td>Сноуборд</td>
+						<td>Арсений Петров</td>
+						<td>04.04.2017</td>
+						<td>14:00</td>
+						<td>4000 руб.</td>
+						<td><a href="#" class="btn-borderless">ЗАПИСАТЬСЯ</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
 
+<!-- subscription -->
+
+		<section class="subscription">
+			<div class="subscription-btn">
+				<span>2 000 Р</span>
+				<a href="#" class="btn">КУПИТЬ</a>
+			</div>
+			<div class="subscription-img">
+				<img src="img/sch-konst.png" alt="Константин константинопольский">
+			</div>
+			<div class="subscription-info">
+				<h3>Free ride / продвинутый уровень</h3>
+				<p>Дата занятия — 30 марта 2017 года</p>
+				<span>Абонемент на разовое посещение (3 часа)</span>
+				<p>Занятие рассчитано на опытных учеников и проходит 
+				вне подготовленной трассы, рядом с горнолыжной базой. 
+				Катание по нетронутому снегу раскрывает все возможности 
+				горных лыж, а опытный инструктор научит контролировать 
+				лыжи на любой поверхности.</p>
+				<a href="#" class="active">Узнать больше</a>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+<!-- pagination -->
+
+		<section class="pagination">
+			<div class="pagination-list">
+				<ul>
+					<li><a href="#"><span class="left"></span></a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#"><span class="right r"></span></a></li>
+				</ul>
+			</div>
+		</section>
+
+<!-- form -->
+
+		<section class="form">
+			<div class="form-info">
+				<span>Заказать обратный звонок</span>
+				<form>
+					<label for="name"><p>*имя</p></label>
+					<input type="text" id="name">
+					<label for="surname"><p>*Фамилия</p></label>
+					<input type="text" id="surname">
+					<label for="cell"><p>*Телефон</p></label>
+					<input type="text" id="cell">
+					<label for="comment"><p>Ваше сообщение</p></label>
+					<textarea id="comment"></textarea>
+				</form>
+			</div>
+			<a href="#" class="btn">ОТПРАВИТЬ</a>
+		</section>
+</section>
 
 <!-- footer -->
 
